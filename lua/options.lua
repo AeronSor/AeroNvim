@@ -19,9 +19,12 @@ set.relativenumber = true
 -- Make the cwd be the same as file opened
 set.autochdir = true
 
+-- Tressitter Folding
+set.foldmethod = 'manual'
+
 -- Vimscript
 vim.cmd "colorscheme alduin" 
 vim.cmd "syntax enable"
 
--- Lua calls
+-- Makes so Tressitter doesn't write excessive text
 vim.diagnostic.config({virtual_text = false})

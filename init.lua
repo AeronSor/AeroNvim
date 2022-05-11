@@ -3,6 +3,7 @@ require('options')
 require('keybindings')
 require('plugins')
 require('lspcalls')
+require('autocmd')
 
 -- Plugins
 require('General/feline-config')
