@@ -37,10 +37,11 @@ keymap("n", "<leader>p", ":exec '!python' shellescape(@%, 1)<CR>")
 keymap("n", "<leader>+", ":lua vim.diagnostic.goto_next()<CR>")
 keymap("n", "<leader>-", ":lua vim.diagnostic.goto_prev()<CR>")
 keymap("n", "<leader>*", ":lua vim.diagnostic.setloclist()<CR>")
+
 keymap("n", "tt", ":lua vim.diagnostic.config({virtual_text=false})<CR>")
 keymap("n", "ty", ":lua vim.diagnostic.config({virtual_text=true})<CR>")
 
 -- X11 clipboard
-keymap('v', 'xyy', ':!xclip -f -sel clip<CR>')
-keymap('n', 'xpp', ':-1r !xclip -o -sel clip<CR>')
+keymap('v', 'Xyy', ':!xclip -f -sel clip<CR>')
+keymap('n', 'Xpp', ':-1r !xclip -o -sel clip<CR>')
 
